@@ -210,7 +210,7 @@ task esp_compile, "Compile Nim project for esp-idf program":
 
   let
     nimargs = @[
-      "c",
+      "cpp",
       "--path:" & thisDir() / nopts.appsrc,
       "--nomain",
       "--compileOnly",
